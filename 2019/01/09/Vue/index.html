@@ -5,19 +5,20 @@
   
 
   
-  <title>Hello World | Hexo</title>
+  <title>Vue | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="Vue.js基本使用常用的几个指令template: 可以手动定义模板 &amp;lt;不推荐使用&amp;gt;&amp;lt;标签 v-text=”数据名”&amp;gt;&amp;lt;/标签&amp;gt; 或者 &amp;lt;标签&amp;gt;&amp;lt;/标签&amp;gt;  文字&amp;lt;标签 v-html=”数据名”&amp;gt;&amp;lt;/标签&amp;gt;                              html标签&amp;lt;标签 v-bind=”数据名">
+<meta name="keywords" content="-VUE">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://DilongChan.github.io/2019/01/07/hello-world/index.html">
+<meta property="og:title" content="Vue">
+<meta property="og:url" content="http://DilongChan.github.io/2019/01/09/Vue/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Vue.js基本使用常用的几个指令template: 可以手动定义模板 &amp;lt;不推荐使用&amp;gt;&amp;lt;标签 v-text=”数据名”&amp;gt;&amp;lt;/标签&amp;gt; 或者 &amp;lt;标签&amp;gt;&amp;lt;/标签&amp;gt;  文字&amp;lt;标签 v-html=”数据名”&amp;gt;&amp;lt;/标签&amp;gt;                              html标签&amp;lt;标签 v-bind=”数据名">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-07T12:19:48.194Z">
+<meta property="og:updated_time" content="2019-01-08T16:19:37.368Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Vue">
+<meta name="twitter:description" content="Vue.js基本使用常用的几个指令template: 可以手动定义模板 &amp;lt;不推荐使用&amp;gt;&amp;lt;标签 v-text=”数据名”&amp;gt;&amp;lt;/标签&amp;gt; 或者 &amp;lt;标签&amp;gt;&amp;lt;/标签&amp;gt;  文字&amp;lt;标签 v-html=”数据名”&amp;gt;&amp;lt;/标签&amp;gt;                              html标签&amp;lt;标签 v-bind=”数据名">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,10 +65,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-Vue" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/01/07/hello-world/" class="article-date">
-  <time datetime="2019-01-07T12:19:48.184Z" itemprop="datePublished">2019-01-07</time>
+    <a href="/2019/01/09/Vue/" class="article-date">
+  <time datetime="2019-01-08T16:18:08.000Z" itemprop="datePublished">2019-01-09</time>
 </a>
     
   </div>
@@ -78,7 +79,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Vue
     </h1>
   
 
@@ -86,37 +87,35 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>Vue.js基本使用<br>常用的几个指令<br>template: 可以手动定义模板 &lt;不推荐使用&gt;<br>&lt;标签 v-text=”数据名”&gt;&lt;/标签&gt; 或者 &lt;标签&gt;&lt;/标签&gt;  文字<br>&lt;标签 v-html=”数据名”&gt;&lt;/标签&gt;                              html标签<br>&lt;标签 v-bind=”数据名”&gt;&lt;/标签&gt;                          添加属性</p>
+<p>v-on:事件类型=函数名                                       绑定事件<br>注意：用mothods方法 里面写函数处理方式 不带前缀on</p>
+<p>指令缩写<br>v-bind:属性   -&gt;  :属性<br>v-on:事件类型  -&gt;  @事件类型</p>
+<p>Vue中的this指向？<br>this指向Vue对象</p>
+<p>事件修饰符<br>@事件.stop=”函数名”          阻止冒泡事件<br>@事件.pervent = “函数名”     阻止a连接的默认行为<br>@事件.once = “函数名”            该事件只能触发一次</p>
+<p>v-model表单数据绑定(双向数据绑定)<br>v-model 类似于表单</p>
+<p>methods与computed的区别<br>Methods中的方法每执行一次或者调用执行函数体代码里面的数据都会一一的执行下来<br>Computed中的计算属性 如果原始的数据没有发生变化 只会第一次完整的执行一次其余的都是拿计算属性的缓存输出</p>
+<p>监听器<br>Watch:{<br>需要监听的函数:function(){<br>}<br>}</p>
+<p>数据的遍历<br>&lt;标签 v-for=”item in list”&gt;&lt;/标签&gt;<br>v-if 与 v-show 类似于display  false为隐藏 true为显示<br>建议使用v-show</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://DilongChan.github.io/2019/01/07/hello-world/" data-id="cjqnynr4f0001mgvbsvsnefui" class="article-share-link">Share</a>
+      <a data-url="http://DilongChan.github.io/2019/01/09/Vue/" data-id="cjqnynr4j0003mgvbwn3motnv" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VUE/">-VUE</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2019/01/07/first-post/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          first-post
-        
-      </div>
-    </a>
   
+    <a href="/2019/01/07/first-post/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">first-post</div>
+    </a>
   
 </nav>
 
